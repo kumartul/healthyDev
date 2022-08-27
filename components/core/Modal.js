@@ -7,7 +7,7 @@ const Modal = ({ onClick, onClose, title, Content }) => {
 		<div>
 			<div className="absolute top-0 left-0 right-0 bottom-0 bg-gray-900 opacity-50"></div>
 			<div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
-				<div className="relative h-[35vh] w-[30vw] bg-white !opacity-100 rounded-lg z-10 p-10">
+				<div className="relative h-[40vh] w-[30vw] bg-white !opacity-100 rounded-lg z-10 p-10">
 					<GrClose
 						onClick={onClose}
 						className="absolute right-0 top-0 m-4 cursor-pointer text-gray-800"
