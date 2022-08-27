@@ -10,7 +10,7 @@ const Box = ({ title, description, btnText, onClick }) => {
 
 			<Button
 				onClick={onClick}
-				className="bg-blue-500 text-white normal-case my-3 w-full hover:bg-blue-600"
+				className="!bg-blue-500 !text-white !normal-case !my-3 w-full hover:!bg-blue-600"
 			>
 				{btnText}
 			</Button>
