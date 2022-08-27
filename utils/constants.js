@@ -9,5 +9,7 @@ export const LOCAL_STORAGE_KEYS = {
 	EYE_DATA: 'eyedata',
 	EAR_DATA: 'eardata',
 	MY_DATA: 'myData',
-	NAME: 'name'
+	NAME: 'name',
+	BAD_POSTURE_COUNT: 'badPostureCount',
+	GOOD_POSTURE_COUNT: 'goodPostureCount'
 }
