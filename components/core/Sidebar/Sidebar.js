@@ -15,7 +15,7 @@ const Sidebar = ({ active }) => {
 		<aside className="flex-[0.12] p-4 ml-auto">
 			<ul>
 				<SidebarItem href="/" Icon={AiFillHome} title="Home" isActive={SIDEBAR_ITEMS.HOME === active} />
-				<SidebarItem href="/about" Icon={MdEmojiPeople} title="Back Care" isActive={SIDEBAR_ITEMS.BACK_CARE === active} />
+				<SidebarItem href="/backcare" Icon={MdEmojiPeople} title="Back Care" isActive={SIDEBAR_ITEMS.BACK_CARE === active} />
 				<SidebarItem href="/earcare" Icon={FaAssistiveListeningSystems} title="Ear Care" isActive={SIDEBAR_ITEMS.EAR_CARE === active} />
 				<SidebarItem href="/eyecare" Icon={AiFillEye} title="Eye Care" isActive={SIDEBAR_ITEMS.EYE_CARE === active} />
 			</ul>
