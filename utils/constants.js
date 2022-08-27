@@ -4,3 +4,10 @@ export const SIDEBAR_ITEMS = {
 	EAR_CARE: 'earcare',
 	EYE_CARE: 'eyecare'
 }
+
+export const LOCAL_STORAGE_KEYS = {
+	EYE_DATA: 'eyedata',
+	EAR_DATA: 'eardata',
+	MY_DATA: 'myData',
+	NAME: 'name'
+}
