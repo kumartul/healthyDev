@@ -4,7 +4,7 @@ export const notify = url => {
 			navigator.serviceWorker.ready.then(registration => {
 				registration.showNotification("Exercise Time", {
 					body: "Look away from the screen",
-					icon: "../public/assets/images/icon.png",
+					icon: "/assets/images/icon.png",
 					data: url,
 					vibrate: [200, 100, 200, 100, 200, 100, 200],
 					tag: "Exercise Reminder",
@@ -20,7 +20,7 @@ export const notify = url => {
 		}
 	});
 
-	const audio = new Audio('../public/assets/sounds/notification.wav');
+	const audio = new Audio('/assets/sounds/notification.wav');
 	audio.play();
 }
 
@@ -30,7 +30,7 @@ export const notifySitStraight = url => {
 			navigator.serviceWorker.ready.then(registration => {
 				registration.showNotification("Sit Straight", {
 					body: "Bad posture sit straight",
-					icon: "../public/assets/images/icon.png",
+					icon: "/assets/images/icon.png",
 					data: url,
 					vibrate: [200, 100, 200, 100, 200, 100, 200],
 					tag: "Sit straight",
@@ -46,7 +46,7 @@ export const notifyEar = url => {
 			navigator.serviceWorker.ready.then(registration => {
 				registration.showNotification("Earphone remove time", {
 					body: "Stop using earphones now!",
-					icon: "../public/assets/images/icon.png",
+					icon: "/assets/images/icon.png",
 					data: url,
 					vibrate: [200, 100, 200, 100, 200, 100, 200],
 					tag: "Exercise Reminder",
@@ -62,7 +62,7 @@ export const notifyEar = url => {
 		}
 	});
 
-	const audio = new Audio('../public/assets/sounds/notification.wav');
+	const audio = new Audio('/assets/sounds/notification.wav');
 	audio.play();
 }
 
