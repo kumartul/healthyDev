@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -24,9 +26,11 @@ const Navbar = () => {
 		<nav className="w-full bg-[#fafafa] flex items-center justify-between shadow-sm p-2 dark:bg-[#1a1a1a]">
 
 			{/* Logo */}
-			<div>
-				<h1 className="font-bold text-md md:text-2xl lg:text-2xl text-gray-700 dark:text-gray-300">HealthyDev 🩺</h1>
-			</div>
+			<Link href='/'>
+				<div className="cursor-pointer">
+					<h1 className="font-bold text-md md:text-2xl lg:text-2xl text-gray-700 dark:text-gray-300">HealthyDev 🩺</h1>
+				</div>
+			</Link>
 
 			<div className="flex items-center space-x-2">
 
