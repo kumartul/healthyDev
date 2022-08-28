@@ -40,10 +40,6 @@ const TrainBackCare = () => {
 	const [isTrained, setIsTrained] = useState(false);
 	const [isDisabled, setIsDisabled] = useState(true);
 
-	const [showModal, setShowModal] = useState(true);
-	const [showAlert, setShowAlert] = useState(true);
-	const [showDoneModal, setShowDoneModal] = useState(false);
-
 	const [goodPicsCount, setGoodPicsCount] = useState(0);
 	const [badPicsCount, setBadPicsCount] = useState(0);
 
@@ -68,9 +64,13 @@ const TrainBackCare = () => {
 
 		if(classId === 'good') {
 			setGoodPicsCount(goodPicsCount + 1);
+
+			localStorage.setItem(LOCAL_STORAGE_KEYS.GOOD_POSTURE_COUNT, goodPicsCount);
 		}
 		else {
 			setBadPicsCount(badPicsCount + 1);
+			
+			localStorage.setItem(LOCAL_STORAGE_KEYS.BAD_POSTURE_COUNT, badPicsCount);
 		}
 	}
 
@@ -82,7 +82,6 @@ const TrainBackCare = () => {
 		localStorage.setItem(LOCAL_STORAGE_KEYS.MY_DATA, datasetJson);
 
 		setIsTrained(true);
-		setShowDoneModal(true);
 	}
 
 	const classifyPic = async () => {
