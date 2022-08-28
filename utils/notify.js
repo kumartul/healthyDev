@@ -20,7 +20,7 @@ export const notify = url => {
 		}
 	});
 
-	const audio = new Audio('/assets/sounds/notification.wav');
+	const audio = new Audio('/assets/audio/notification.wav');
 	audio.play();
 }
 
@@ -62,7 +62,7 @@ export const notifyEar = url => {
 		}
 	});
 
-	const audio = new Audio('/assets/sounds/notification.wav');
+	const audio = new Audio('/assets/audio/notification.wav');
 	audio.play();
 }
 
