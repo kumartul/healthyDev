@@ -10,8 +10,6 @@ const Toggle = ({ title, checked, onChange }) => {
 						onChange={onChange}
 						className="absolute right-0 top-[7px] w-5 h-5 cursor-pointer"
 					/>
-
-					<span></span>
 				</label>
 			</div>
 		</div>
