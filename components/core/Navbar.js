@@ -21,7 +21,7 @@ const Navbar = () => {
 
 
 	return (
-		<header className="w-full bg-[#fafafa] flex items-center justify-between shadow-sm p-2 dark:bg-[#1a1a1a]">
+		<nav className="w-full bg-[#fafafa] flex items-center justify-between shadow-sm p-2 dark:bg-[#1a1a1a]">
 
 			{/* Logo */}
 			<div>
@@ -101,7 +101,7 @@ const Navbar = () => {
 					</div>
 				</a>
 			</div>
-		</header>
+		</nav>
 	);
 }
 
