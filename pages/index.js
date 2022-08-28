@@ -57,7 +57,7 @@ let i = 0;
 let timeCounter = 1;
 
 const Home = () => {
-	const [time, setTime] = useState(50);
+	const [time, setTime] = useState(10000);
 
 	const [isStarted, setIsStarted] = useState(false);
 	const [isPluggedOut, setIsPluggedOut] = useState();
@@ -218,21 +218,6 @@ const Home = () => {
 				setSoundOption(false);
 			})
 	}
-
-	navigator.mediaDevices.addEventListener("devicechange", () => {
-		navigator.mediaDevices.enumerateDevices().then((devices) => {
-			let pluggedOut = true;
-
-			for (let i = 0; i < devices.length; i++) {
-				if (((devices[i].deviceId === earDeviceId) !== devices[i].groupId) === earDeviceId) {
-					pluggedOut = false;
-				}
-			}
-			if (pluggedOut) {
-				setIsPluggedOut(true);
-			}
-		});
-	});
 
 	return (
 		<div>
