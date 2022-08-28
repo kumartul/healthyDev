@@ -37,10 +37,10 @@ const EarCare = () => {
 				<Navbar />
 			</header>
 
-			<main className="flex w-full">
+			<main className="flex w-full !h-4/5">
 				<Sidebar active={SIDEBAR_ITEMS.EAR_CARE} />
 
-				<div className="flex-[0.55]">
+				<div className="flex-[0.55] !h-4/5">
 					<h2 className="text-3xl font-semibold ml-8 py-8">Ear Care</h2>
 					<BarChart />
 				</div>

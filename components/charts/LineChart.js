@@ -25,6 +25,17 @@ ChartJS.register(
 	Legend,
 	Filler
 );
+
+export const options = {
+	responsive: true,
+	maintainAspectRatio: true,
+	plugins: {
+		title: {
+			display: true,
+			text: 'Eye Care Analysis'
+		}
+	}
+}
   
 export function LineChart() {
 	const [eyeData, setEyeData] = useState([0, 0, 0, 0, 0, 0, 0]);
@@ -44,7 +55,7 @@ export function LineChart() {
 				data: eyeData,
 				borderColor: "rgba(0, 153, 246, 0.5)",
 				backgroundColor: "rgba(0, 153, 246, 0.2)",
-				responsive: true
+				responsive: false
 			}
 		]
 	};
@@ -53,10 +64,7 @@ export function LineChart() {
 	return (
 		<Line
 			data={data}
-			options={{
-				responsive: true,
-				maintainAspectRatio: false,
-			}}
+			options={options}
 		/>
 	);
 }

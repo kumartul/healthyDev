@@ -15,6 +15,17 @@ ChartJS.register(
 	Tooltip, 
 	Legend
 );
+
+export const options = {
+	responsive: true,
+	maintainAspectRatio: true,
+	plugins: {
+		title: {
+			display: true,
+			text: 'Back Care Analysis'
+		}
+	}
+}
   
 const PieChart = () => {
 	const [badCount, setBadCount] = useState(0);
@@ -63,7 +74,10 @@ const PieChart = () => {
 	}
 
     return (
-		<Pie data={data} />
+		<Pie 
+			options={options}
+			data={data} 
+		/>
     );
 }
 

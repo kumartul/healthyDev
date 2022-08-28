@@ -37,7 +37,7 @@ const EyeCare = () => {
 				<Navbar />
 			</header>
 
-			<main className="flex w-full">
+			<main className="flex w-full h-4/5">
 				<Sidebar active={SIDEBAR_ITEMS.EYE_CARE} />
 
 				<div className="flex-[0.55]">
