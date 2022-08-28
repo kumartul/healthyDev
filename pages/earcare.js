@@ -28,6 +28,32 @@ const EarCare = () => {
 	return (
 		<div>
 			<Head>
+				{/* Required meta tags */}
+				<meta charset="UTF-8" />
+				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<meta name="description" content="Take care of your health as a developer" />
+				<meta name="keywords" content="health healthy developer care dev devhealth healthydev ear eye back earcare eyecare backcare" />
+				<meta name="author" content="Atul Kumar" />
+
+				{/* Open Graph Meta Tags */}
+				<meta property="og:title" content="HealthyDev 🩺" />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://healthy-dev-beta.vercel.app" />
+				<meta property="og:image" content="https://healthy-dev-beta.vercel.app/mockup.png" />
+				<meta property="og:description" content="Take care of your health as a developer" />
+				<meta property="og:site_name" content="HealthyDev" />
+				<meta property="og:locale" content="en_US" />
+
+				{/* Twitter Meta Tags */}
+				<meta property="twitter:card" content="summary" />
+				<meta property="twitter:title" content="HealthyDev" />
+				<meta property="twitter:description" content="Take care of your health as a developer" />
+				<meta property="twitter:image" content="https://healthy-dev-beta.vercel.app/mockup.png" />
+				<meta property="twitter:image:alt" content="HealthyDev Home Page" />
+				<meta property="twitter:site" content="@kumartul001" />
+				<meta property="twitter:creator" content="@kumartul001" />
+				
 				<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
 				<title>Ear Care / HealthyDev</title>
