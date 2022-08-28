@@ -42,6 +42,7 @@ const BackCare = () => {
 				<Sidebar active={SIDEBAR_ITEMS.BACK_CARE} />
 
 				<div className="flex-[0.55]">
+					<h2 className="text-3xl font-semibold ml-8 py-8">Back Care</h2>
 					<PieChart />
 				</div>
 
