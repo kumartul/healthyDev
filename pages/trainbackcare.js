@@ -143,6 +143,7 @@ const TrainBackCare = () => {
 					<Button
 						onClick={() => trainModel('good')}
 						className="!relative !bg-green-500 !text-white !normal-case !text-lg w-[350px] rounded-sm hover:!bg-green-600"
+						disabled={saving}
 					>
 						Capture Good Posture <span className="absolute right-3">{goodPicsCount}</span>
 					</Button>
@@ -150,6 +151,7 @@ const TrainBackCare = () => {
 					<Button
 						onClick={() => trainModel('bad')}
 						className="!relative !bg-red-500 !text-white !normal-case !text-lg w-[350px] rounded-sm hover:!bg-red-600"
+						disabled={saving}
 					>
 						Capture Bad Posture <span className="absolute right-3">{badPicsCount}</span>
 					</Button>
@@ -175,7 +177,7 @@ const TrainBackCare = () => {
 					{
 						isTrained && result && (
 							<div className="!normal-case">
-								{result}
+								{result[0].toUpperCase()}{result.slice(1)}
 							</div>
 						)
 					}
