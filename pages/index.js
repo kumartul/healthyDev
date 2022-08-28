@@ -118,21 +118,21 @@ const Home = () => {
 		if(backOption) {
 			try {
 				const net = await mobilenetModule.load();
-	
+
 				const img = webcamRef.current.video;
 				const activation = net.infer(img, true);
 				const result = await classifier.predictClass(activation);
-	
+
 				setIsCamOn(false);
 
 				if(result.label == 1) {
-					notifySitStraight();
-	
+					notifySitStraight(window.location.href);
+
 					let badPostureCount = Number(localStorage.getItem(LOCAL_STORAGE_KEYS.BAD_POSTURE_COUNT));
 					if(!badPostureCount) {
 						badPostureCount = 0;
 					}
-	
+
 					localStorage.setItem(LOCAL_STORAGE_KEYS.BAD_POSTURE_COUNT, badPostureCount + 1);
 				}
 				else {
@@ -140,7 +140,7 @@ const Home = () => {
 					if(!goodPostureCount) {
 						goodPostureCount = 0;
 					}
-	
+
 					localStorage.setItem(LOCAL_STORAGE_KEYS.GOOD_POSTURE_COUNT, goodPostureCount + 1);
 				}
 			}
